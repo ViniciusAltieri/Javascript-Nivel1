@@ -1,0 +1,10 @@
+Eventos DOM
+-------------------------------------------------------------------------------------------------------------
+Definimos o que acontecera com a <DIV> pelos eventos DOM
+
+Funções - conjunto de linhas (bloco), que serão acionadas quando determinado evento ocorrer.
+
+function () {
+}
+
+

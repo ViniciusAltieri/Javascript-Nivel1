@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        div#css{
+            background: rgb(55, 131, 126);
+            width: 500px;
+            height: 330px;
+            font: 15pt arial;
+            text-align: center;
+        }
+        h1{
+            font: 20pt arial;
+            color:aliceblue
+        }
+        input{
+            width: 200px;
+            height: 20px;
+        }
+        input#buttons{
+            width: 80px;
+            height: 40px;
+        }
+        div#res{
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="css">
+        <br>
+        <h1><strong>Calculadora</strong></h1>
+        <br>
+        <input type="number" name="nmb1" id="nmb1"> 
+        <input type="number" name="nmb2" id="nmb2"> 
+        <br>
+        <br>
+        <input id="buttons" type="button" value="Somar" onclick="somar()"> 
+        <input id="buttons" type="button" value="Subtrair" onclick="subtrair()">
+        <input id="buttons" type="button" value="Multiplicar" onclick="multiplicar()">
+        <input id="buttons" type="button" value="Dividir" onclick="dividir()">
+        <br>
+        <br>
+        <div id="res">Resultado:</div>     
+    </div>
+    <script>
+        function somar() {
+            var tx1 = document.getElementById('nmb1')
+            var tx2 = document.getElementById('nmb2')
+            var resultado = document.getElementById('res')
+            var n1 = Number(tx1.value)// manipulando String pra Number
+            var n2 = Number(tx2.value)// manipulando String pra Number
+            var somar = n1 + n2
+            resultado.innerHTML = `O resultado da soma entre ${n1} e ${n2} é igual a <strong>${somar}</strong>`
+        }
+        function subtrair(){
+            var tx1 = document.getElementById('nmb1')
+            var tx2 = document.getElementById('nmb2')
+            var resultado = document.getElementById('res')
+            var n1 = Number(tx1.value)// manipulando String pra Number
+            var n2 = Number(tx2.value)// manipulando String pra Number
+            var subtrair = n1 - n2
+            resultado.innerHTML = `O resultado da subtração entre ${n1} e ${n2} é igual a <strong>${subtrair}</strong>`
+        }
+        function multiplicar(){
+            var tx1 = document.getElementById('nmb1')
+            var tx2 = document.getElementById('nmb2')
+            var resultado = document.getElementById('res')
+            var n1 = Number(tx1.value)// manipulando String pra Number
+            var n2 = Number(tx2.value)// manipulando String pra Number
+            var multiplicar = n1 * n2
+            resultado.innerHTML = `O resultado da multiplicação entre ${n1} e ${n2} é igual a <strong>${multiplicar}</strong>`
+        }
+        function dividir(){
+            var tx1 = document.getElementById('nmb1')
+            var tx2 = document.getElementById('nmb2')
+            var resultado = document.getElementById('res')
+            var n1 = Number(tx1.value)// manipulando String pra Number
+            var n2 = Number(tx2.value)// manipulando String pra Number
+            var dividir = n1 / n2
+            resultado.innerHTML = `O resultado da divisão entre ${n1} e ${n2} é igual a <strong>${dividir}</strong>`
+
+        }
+    </script>
+    
+</body>
+</html>
