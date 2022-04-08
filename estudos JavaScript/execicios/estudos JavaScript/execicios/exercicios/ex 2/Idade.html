@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div id="ano">
+            Ano de nascimento: <input type="number" name="idade" id="idade">
+        </div> 
+        <br>
+        <div id="sexo">
+            Sexo: <input type="radio" name="rad" id="masculino">
+            <label for="masculino">Masculino</label> 
+            <input type="radio" name="rad" id="feminino"> 
+            <label for="feminino">Feminino</label>
+        </div>
+        <br>
+        <div id="resultado">
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="mensagem">
+            <p>Preencha os dados acima para obter o resultado!</p>
+        </div>
+        <div id="fotos">
+            <img id="img">
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Vinicius</p>
+    </footer>
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Variaveis compostas
+
+Array é uma varialvel composta, que possue varios elementos.
+
+Cada elemento é composto por seu valor e por uma chave de indentificação (key)
+
+num[posição do elemento] = x  --- Para adicionar um novo valor a determinado elemento.
+num.push(valor) --- Para adicionar um novo valor na última posição.
+num.lenght --- Quantidade de elementos no vetor
+num.sort(function(a, b){return a-b}) --- Organizar os números (valores) em ordem crescente
+num.indexOf(valor) --- buscar um valor dentro do vetor

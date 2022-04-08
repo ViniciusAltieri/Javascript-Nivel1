@@ -1,0 +1,27 @@
+body{
+    background: pink;
+}
+section{
+    background: white;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+}
+div{
+    padding: 7px;
+}
+h1{
+    font: 28pt arial;
+    text-align: center;
+    color:aliceblue;
+}
+footer{
+    font: 15pt arial;
+    text-align: center;
+    font-style: italic;
+    color: aliceblue;
+}
+select{
+    width: 200px;
+}

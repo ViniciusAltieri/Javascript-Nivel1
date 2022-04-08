@@ -1,0 +1,35 @@
+h1{
+    font: 25pt arial;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 700; /* espessura da letra*/
+
+}
+div#hora{
+    text-align: center;
+    background: white;
+    width: 400px;
+    border-radius: 20px; /* arredondar borda*/
+    padding: 13px; /* espaçamento */
+    margin: auto; /* centralizar o quadrado */
+    box-shadow: 5px 5px 5px rgba(100, 97, 97, 0.267); /* sombra na borda */
+
+}
+body{
+    background: rgb(146, 145, 145);
+    font: normal 14pt arial
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+}
+div{
+    padding: 10px;
+}
+footer{
+    text-align: center;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.452);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: 20pt Arial;
+            background: rgb(252, 17, 0);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        Interaja...
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar) // registra quando clicar na área determinada
+        a.addEventListener('mouseout', sair) //registra quando tirar o cursor da área determinada
+
+        // addEventListener() registra uma única espera de evento em um único alvo.
+
+        function clicar() { // define a ação a ser executada após clicar na area da <div>
+            a.innerText = 'clicou!!!'
+            a.style.background = 'green'
+        }
+        function sair() { // define a ação a ser executada após passar o mouse na area da <div>
+            a.innerText = 'opa'
+        }
+    </script>
+    
+</body>
+</html>
